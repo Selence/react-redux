@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyFirstTestComponent when the component is called renders correctly 1`] = `
+<divs>
+  uh...Yes I can!
+</divs>
+`;
