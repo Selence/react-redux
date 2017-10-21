@@ -8,12 +8,12 @@ export const MyFirstTestComponent = ({
     counter
 }) => {
     return (
-        <divs>
+        <div>
             uh...Yes I can!
-        </divs>
+        </div>
     );
 };
 
 MyFirstTestComponent.propTypes = {
-  counter: PropTypes.number
+    counter: PropTypes.number
 };
