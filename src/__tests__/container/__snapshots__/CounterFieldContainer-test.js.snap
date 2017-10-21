@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container CounterField when the container is called with a counter value the props are parsed to the component 1`] = `
+<div
+  className="CounterFieldComponent"
+  counter={0}
+  dispatch={[Function]}
+/>
+`;
+
+exports[`Container CounterField when the container is called with no counter value the default props are parsed to the component 1`] = `
+<div
+  className="CounterFieldComponent"
+  counter={0}
+  dispatch={[Function]}
+/>
+`;

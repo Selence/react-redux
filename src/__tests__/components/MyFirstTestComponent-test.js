@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { MyFirstTestComponent } from '../../components/CounterFieldComponent'
+import { CounterFieldComponent } from '../../client/app/components/CounterFieldComponent'
 
-describe('MyFirstTestComponent', () => {
+describe('Component CounterField', () => {
     const renderComponent = () => (
-        renderer.create(<MyFirstTestComponent />).toJSON()
+        renderer.create(<CounterFieldComponent />).toJSON()
     );
 
     describe('when the component is called', () => {

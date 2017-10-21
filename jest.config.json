@@ -1,10 +1,11 @@
 {
     "roots": [
-        "<rootDir>/src/client/app"
+        "<rootDir>/src"
     ],
     "testMatch": [
         "**/*-test.js"
     ],
+    "setupFiles": ["./jest-setup.js"],
     "collectCoverage": true,
     "collectCoverageFrom": [
         "**/*.{js,jsx}"
@@ -18,5 +19,5 @@
             "statements": 100
         }
     },
-    "coveragePathIgnorePatterns": ["index.jsx"]
+    "coveragePathIgnorePatterns": ["index.jsx", "jest-setup.js"]
 }

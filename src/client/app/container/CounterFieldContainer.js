@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import { MyFirstTestComponent } from '../components/CounterFieldComponent'
+import { CounterFieldComponent } from '../components/CounterFieldComponent'
 
 /**
  * @param {Object} state
@@ -12,4 +12,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(MyFirstTestComponent)
+export default connect(mapStateToProps)(CounterFieldComponent)

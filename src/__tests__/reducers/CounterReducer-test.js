@@ -1,5 +1,5 @@
 import React from 'react';
-import { increaseCounter } from '../../actions/CounterAction';
+import { counterIncrease } from '../../client/app/reducers/CounterReducer';
 
 jest.mock(
     '../../actions/CounterAction',
@@ -8,7 +8,7 @@ jest.mock(
     })
 );
 
-describe.skip('CounterAction', () => {
+describe('CounterAction', () => {
     let currentState = {},
         givenAction;
 
@@ -26,8 +26,8 @@ describe.skip('CounterAction', () => {
             });
 
             it('returns the new state', () => {
-                givenAction.counter = 3;
-                expect(increaseCounter(currentState, givenAction)).toEqual(0);
+                givenAction.counter = 5;
+                expect(counterIncrease(currentState, givenAction)).toEqual({counter: 8});
             });
         })
     })

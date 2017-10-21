@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
  * @param {Number} counter
  * @returns {XML}
  */
-export const MyFirstTestComponent = ({
+export const CounterFieldComponent = ({
     counter
 }) => {
 
@@ -24,6 +24,6 @@ export const MyFirstTestComponent = ({
     );
 };
 
-MyFirstTestComponent.propTypes = {
+CounterFieldComponent.propTypes = {
     counter: PropTypes.number
 };
