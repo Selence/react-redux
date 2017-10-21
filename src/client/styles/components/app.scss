@@ -1,0 +1,7 @@
+.app {
+  width: 100%;
+
+  @include element('text') {
+    font-size: 25px;
+  }
+}

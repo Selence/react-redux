@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { MyFirstTestComponent } from '../../components/MyFirstTestComponent'
+import { MyFirstTestComponent } from '../../components/CounterFieldComponent'
 
 describe('MyFirstTestComponent', () => {
     const renderComponent = () => (
