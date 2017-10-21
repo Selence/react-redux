@@ -5,6 +5,9 @@ vanilla react redux example
 I used React since one year and every time i started a new project i spend hours to create the basics. That's why I started to create a basic prototype of a react redux project, tested with jest.
 
 ## Installation
+```
+ git clone https://github.com/Selence/simple-react-redux.git
+ ```
 To build the project run the following:
 ```
 npm run build
