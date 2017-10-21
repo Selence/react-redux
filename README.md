@@ -2,7 +2,7 @@
 vanilla react redux example
 
 ## Motivation
-I used React since one year and every time i started a new project i spend hours to create the basics. That's why I started to create a basic prototype of a react redux project, tested with jest.
+I started to use React one year ago and every time i started a new project i spend hours to create the basics. That's why I created a basic prototype of a react redux project, tested with jest.
 
 ## Installation
 ```
