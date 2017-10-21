@@ -1,12 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @returns {XML}
  */
-export const MyFirstTestComponent = () => {
+export const MyFirstTestComponent = ({
+    counter
+}) => {
     return (
-        <divs>
+        <div>
             uh...Yes I can!
-        </divs>
+        </div>
     );
+};
+
+MyFirstTestComponent.propTypes = {
+    counter: PropTypes.number
 };
