@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component CounterField when the component is called with an update counter state (5) renders correctly 1`] = `
+<div>
+  <p>
+    Counter:
+  </p>
+  <div
+    className="counter__field"
+  >
+    5
+  </div>
+  <div
+    className="hint"
+  >
+    <p
+      className="hint__text"
+    >
+      Download 
+      <a
+        href="https://github.com/zalmoxisus/redux-devtools-extension"
+      >
+        redux-devtools-extension
+      </a>
+       to show the store
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Component CounterField when the component is called with the initial counter state (1) renders correctly 1`] = `
+<div>
+  <p>
+    Counter:
+  </p>
+  <div
+    className="counter__field"
+  >
+    1
+  </div>
+</div>
+`;

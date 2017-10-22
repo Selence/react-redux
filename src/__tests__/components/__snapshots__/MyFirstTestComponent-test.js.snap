@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component CounterField when the component is called renders correctly 1`] = `
+<div>
+  <p>
+    Counter:
+  </p>
+  <div
+    className="counter__field"
+  />
+</div>
+`;
+
+exports[`MyFirstTestComponent when the component is called renders correctly 1`] = `
+<divs>
+  uh...Yes I can!
+</divs>
+`;

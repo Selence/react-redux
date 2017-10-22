@@ -2,12 +2,12 @@ import {
     INCREASE_COUNTER
 } from '../actions/CounterAction';
 
-export const counterIncrease = (state = {counter: 1}, action) => {
+export const counter = (state = {value: 1}, action) => {
     switch (action.type) {
         case INCREASE_COUNTER:
             return {
                 ...state,
-                counter: state.counter + action.counter
+                value: state.value + action.value
             };
 
         default:

@@ -1,0 +1,26 @@
+.counter {
+  width: 20%;
+
+  @include element('button') {
+    @include nonSelectable();
+
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+      border-color: black;
+    }
+
+    &:active {
+      background-color: white;
+    }
+  }
+
+  @include element('field') {
+    border: 1px dashed black;
+    width: 10%;
+  }
+}

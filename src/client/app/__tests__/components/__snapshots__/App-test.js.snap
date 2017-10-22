@@ -1,12 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App when the component is called renders correctly 1`] = `
-<div>
-  <p>
-    Hello React Project ... can you load ... ?
+exports[`Component App when the component is called it renders correctly 1`] = `
+<div
+  className="app"
+>
+  <p
+    className="app__text"
+  >
+    If you see this, it seems to be working
   </p>
-  <divs>
-    uh...Yes I can!
-  </divs>
+  <div
+    className="counter"
+  >
+    <div
+      className="CounterButtonContainer"
+    />
+    <div
+      className="CounterFieldContainer"
+    />
+  </div>
 </div>
 `;

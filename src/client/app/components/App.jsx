@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { MyFirstTestComponent } from './MyFirstTestComponent';
+import CounterFieldContainer from '../container/CounterFieldContainer';
+import CounterButtonContainer from '../container/CounterButtonContainer';
 
 /**
  * @returns {XML}
@@ -7,16 +8,27 @@ import { MyFirstTestComponent } from './MyFirstTestComponent';
 export class App extends Component {
     constructor(props) {
         super(props);
+
+        this.renderCounterContainer = this.renderCounterContainer();
     }
+
+    renderCounterContainer() {
+        return (
+            <div className="counter">
+                <CounterButtonContainer />
+                <CounterFieldContainer />
+            </div>
+        )
+    };
 
     /**
      * @returns {XML}
      */
     render () {
         return (
-            <div>
-                <p>Hello React Project ... can you load ... ?</p>
-                <MyFirstTestComponent />
+            <div className="app">
+                <p className="app__text">If you see this, it seems to be working</p>
+                {this.renderCounterContainer}
             </div>
         );
     }

@@ -1,6 +1,6 @@
 export const INCREASE_COUNTER = 'INCREASE_COUNTER';
 
-export const increaseCounter = (counter) => ({
+export const increaseCounter = () => ({
     type: INCREASE_COUNTER,
-    counter
+    value: 1
 });

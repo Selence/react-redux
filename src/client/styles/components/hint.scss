@@ -1,0 +1,8 @@
+.hint {
+  border: 1px solid gray;
+  margin-top: 10px;
+
+  @include element('text') {
+    padding: 15px;
+  }
+}

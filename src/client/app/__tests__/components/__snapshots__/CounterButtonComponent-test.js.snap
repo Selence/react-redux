@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component CounterButton when the component is rendered it math to snapshot 1`] = `
+<div
+  className="counter__button"
+  onClick={[Function]}
+>
+  Increase Counter +1
+</div>
+`;

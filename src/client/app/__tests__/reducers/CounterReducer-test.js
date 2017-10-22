@@ -1,6 +1,5 @@
 import React from 'react';
-import { counterIncrease } from '../../reducers/CounterReducer';
-
+import {counter} from '../../reducers/CounterReducer';
 
 jest.mock(
     '../../actions/CounterAction',
@@ -9,27 +8,68 @@ jest.mock(
     })
 );
 
-describe('CounterAction', () => {
-    let currentState = {},
+describe('Action Counter', () => {
+    let currentState,
         givenAction;
 
-    describe('when the the action is called', () => {
-        describe('and a new counter is set', () => {
-            beforeEach(() => {
-                Object.defineProperty(currentState, 'counter', {
-                    writable: false,
-                    value: 3
+    beforeEach(() => {
+        currentState = {};
+    });
+
+    describe('when the action is called', () => {
+        describe('with a fully filled store', () => {
+            describe('and a new counter value is given with the correct action type', () => {
+                beforeEach(() => {
+                    Object.defineProperty(currentState, 'value', {
+                        writable: false,
+                        value: 3
+                    });
+
+                    givenAction = {
+                        type: 'INCREASE_COUNTER_MOCK'
+                    }
                 });
 
-                givenAction = {
-                    type: 'INCREASE_COUNTER_MOCK'
-                }
+                it('it returns the old state plus the new state', () => {
+                    givenAction.value = 5;
+                    expect(counter(currentState, givenAction)).toEqual({value: 8});
+                });
             });
 
-            it('returns the new state', () => {
-                givenAction.counter = 5;
-                expect(counterIncrease(currentState, givenAction)).toEqual({counter: 8});
+            describe('and a new counter value is given with an unknown action type', () => {
+                beforeEach(() => {
+                    Object.defineProperty(currentState, 'value', {
+                        writable: false,
+                        value: 3
+                    });
+
+                    givenAction = {
+                        type: 'INCREASE'
+                    }
+                });
+
+                it('it returns the given state', () => {
+                    givenAction.value = 5;
+                    expect(counter(currentState, givenAction)).toEqual(currentState);
+                });
             });
-        })
-    })
+        });
+
+        describe('with an empty store', () => {
+            describe('and a new counter value is given', () => {
+                beforeEach(() => {
+                    currentState = undefined;
+
+                    givenAction = {
+                        type: 'INCREASE_COUNTER_MOCK'
+                    }
+                });
+
+                it('it returns the default state (1) plus the given one (3)', () => {
+                    givenAction.value = 3;
+                    expect(counter(currentState, givenAction)).toEqual({value: 4});
+                });
+            });
+        });
+    });
 });
