@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducers Index when the reducers are called they renders correctly 1`] = `<{"counter":{"type":"ACTION_COUNTER"}} />`;

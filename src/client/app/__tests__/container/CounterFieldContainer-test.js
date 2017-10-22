@@ -2,10 +2,10 @@ import React from 'react';
 import {Provider} from 'react-redux'
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
-import CounterFieldContainer from '../../client/app/container/CounterFieldContainer';
+import CounterFieldContainer from '../../container/CounterFieldContainer';
 
 jest.mock(
-    '../../client/app/components/CounterFieldComponent',
+    '../../components/CounterFieldComponent',
     () => ({
         CounterFieldComponent: (props) => (<div className="CounterFieldComponent" {...props} />)
     })

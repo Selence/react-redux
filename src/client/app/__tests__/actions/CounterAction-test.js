@@ -1,5 +1,5 @@
 import React from 'react';
-import { increaseCounter } from '../../client/app/actions/CounterAction';
+import { increaseCounter } from '../../actions/CounterAction';
 
 describe('Counter Action', () => {
     describe('when the action is called', () => {

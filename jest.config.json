@@ -1,11 +1,16 @@
 {
+    "setupFiles": ["raf/polyfill","./lib/jest-setup.js"],
+    "testPathIgnorePatterns" : [
+        "<rootDir>/node_modules/",
+        "<rootDir>/lib/",
+        "<rootDir>/src/client/public"
+    ],
     "roots": [
-        "<rootDir>/src"
+        "<rootDir>/src/client/"
     ],
     "testMatch": [
         "**/*-test.js"
     ],
-    "setupFiles": ["./jest-setup.js"],
     "collectCoverage": true,
     "collectCoverageFrom": [
         "**/*.{js,jsx}"
@@ -19,5 +24,10 @@
             "statements": 100
         }
     },
-    "coveragePathIgnorePatterns": ["index.jsx", "jest-setup.js"]
+    "coveragePathIgnorePatterns": [
+        "index.jsx",
+        "lib/",
+        "public/*",
+        "ReduxStore"
+    ]
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { App } from '../../client/app/components/App'
+import { App } from '../../components/App'
 
 jest.mock(
-    '../../client/app/container/CounterFieldContainer',
+    '../../container/CounterFieldContainer',
     () => () => <div className="CounterFieldContainer" />
 );
 
 jest.mock(
-    '../../client/app/container/CounterButtonContainer',
+    '../../container/CounterButtonContainer',
     () => () => <div className="CounterButtonContainer" />
 );
 
